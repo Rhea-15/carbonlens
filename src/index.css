@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;750;900&family=JetBrains+Mono:wght@450;500;700;900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+/* Frosted Glass Theme Classes */
+.frosted-glass-card {
+  background-color: rgba(255, 255, 255, 0.45);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.04);
+}
+
+.frosted-glass-card-solid {
+  background-color: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.85);
+  box-shadow: 0 15px 35px -5px rgba(0, 0, 0, 0.06);
+}
+
+.frosted-glass-sidebar {
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border-right: 1px solid rgba(255, 255, 255, 0.45);
+}
+
+.frosted-glass-input {
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  transition: all 0.2s ease-in-out;
+}
+
+.frosted-glass-input:focus {
+  background-color: rgba(255, 255, 255, 0.85);
+  border-color: rgba(5, 150, 105, 0.5);
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(5, 150, 105, 0.1);
+}
+
+.frosted-glass-btn-active {
+  background-color: rgba(255, 255, 255, 0.65);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.03);
+}
+
+.frosted-glass-btn-inactive {
+  background-color: transparent;
+  border: 1px solid transparent;
+}
+
+.frosted-glass-btn-inactive:hover {
+  background-color: rgba(255, 255, 255, 0.35);
+}
