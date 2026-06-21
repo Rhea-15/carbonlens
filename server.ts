@@ -7,12 +7,9 @@ import { GoogleGenAI, Type } from "@google/genai";
 import { db, STATIC_ACTIONS } from "./src/server/db.js";
 import { CategoryType, AIInsight, DashboardData } from "./src/types.js";
 
-// Setup __dirname equivalent representing absolute pathing
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
 
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 app.use(express.json());
 
